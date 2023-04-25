@@ -53,7 +53,7 @@ def download(urls, path):
             print(err)
 
 
-def shownames_and_likes(driver,urls):
+def show_title_views_and_likes(driver,urls):
     for url in urls:
         driver.get(url)
 
@@ -65,11 +65,9 @@ def shownames_and_likes(driver,urls):
 
         likes = driver.find_element(By.XPATH, "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[2]/ytd-watch-metadata/div/div[2]/div[2]/div/div/ytd-menu-renderer/div[1]/ytd-segmented-like-dislike-button-renderer/div[1]/ytd-toggle-button-renderer/yt-button-shape/button/div[2]/span").text
 
-        print(f"title: {video_title}, views:{view_count}, likes: {likes}")
+        return(url,"\n",f"title: {video_title}, views: {view_count}, likes: {likes}","\n")
+
     driver.close()
 
 
-driver = webdriver.Firefox()
-URLS = getVideoUrls(driver,"test",2)
-download(URLS,"F:\ForTest")
-shownames_and_likes(driver,URLS)
+
