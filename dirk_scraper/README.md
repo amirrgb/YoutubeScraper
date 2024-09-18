@@ -1,0 +1,2 @@
+# dirk_scraper
+This project involves the use of the Scrapy framework to scrape data from dirk.nl website, specifically books and their details. The scraping process occurs in several steps and the resulting data is stored in a CSV file. The collected data can be used for various purposes, such as building a book recommendation system or analyzing market trends. The efficiency and automation provided by the Scrapy framework allow for quick and reliable data collection.

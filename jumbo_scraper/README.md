@@ -1,0 +1,2 @@
+# jumbo_scraper
+In this project, we're using the Scrapy framework to scrape product information from jumbo.com. By automating the data collection process, we're able to efficiently gather information about various products, such as their names, prices, and descriptions. The scraped data is then stored in a convenient CSV file. This project provides valuable insights for market research, price tracking, and other business applications. With Scrapy, we're able to streamline the data collection process and make it as easy as possible!
